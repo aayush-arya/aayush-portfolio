@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.GH_PAGES === 'true' ? '/aayush-portfolio/' : '/',
   plugins: [react()],
   resolve: {
     alias: {

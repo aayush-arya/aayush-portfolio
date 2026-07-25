@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aayusharya.dev/sitemap.xml
+Sitemap: https://aayush-arya.github.io/aayush-portfolio/sitemap.xml

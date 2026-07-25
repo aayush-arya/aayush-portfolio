@@ -1,3 +1,5 @@
+import { withBase } from '@/lib/utils'
+
 export const profile = {
   name: 'Aayush Arya',
   firstName: 'Aayush',
@@ -19,7 +21,7 @@ export const profile = {
     "That shows up in my day job: at Mycom, I own the backend for PrOptima's Content Manager service — a Spring Boot 3 / WebFlux reactive microservice — where I've shipped a full feature end-to-end, from a 4-layer data pipeline down to SSRF protection, caching, and 20+ passing tests, without adding tech debt to the existing codebase.",
     "Outside of work, I build things I'd actually want to use: InterviewPilot, an AI interview-prep SaaS powered by the Claude API with a real code-execution sandbox, and NextRec, a hybrid recommendation engine combining content, collaborative, and semantic signals. Before all that, an AWS Cloud Engineering internship at Maruti Suzuki taught me IAM and infrastructure the hard way — by doing it in production.",
   ],
-  resumeUrl: '/resume/Aayush_Arya_Resume.pdf',
+  resumeUrl: withBase('/resume/Aayush_Arya_Resume.pdf'),
   socials: {
     github: 'https://github.com/aayush-arya',
     linkedin: 'https://linkedin.com/in/aayush-arya-111750289',

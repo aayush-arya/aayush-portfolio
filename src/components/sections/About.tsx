@@ -5,6 +5,7 @@ import { SectionHeading } from '@/components/shared/SectionHeading'
 import { RevealText } from '@/components/shared/RevealText'
 import { AnimatedCounter } from '@/components/shared/AnimatedCounter'
 import { GlowCard } from '@/components/shared/GlowCard'
+import { withBase } from '@/lib/utils'
 
 const icons = {
   graduation: GraduationCap,
@@ -30,7 +31,7 @@ export function About() {
           >
             <div className="glow-border animate-float relative overflow-hidden rounded-3xl">
               <img
-                src="/images/profile.jpg"
+                src={withBase('/images/profile.jpg')}
                 alt="Aayush Arya"
                 width={720}
                 height={900}

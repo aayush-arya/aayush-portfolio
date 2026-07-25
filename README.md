@@ -90,12 +90,21 @@ Almost everything on the site is data-driven from **`src/data/profile.ts`**. Upd
 
 To replace the résumé, drop your PDF at `public/resume/Aayush_Arya_Resume.pdf` (or update `profile.resumeUrl`).
 
-## Deployment (Vercel)
+## Deployment
 
-1. Push this repo to GitHub/GitLab/Bitbucket.
-2. Import the project in [Vercel](https://vercel.com/new) — it auto-detects Vite via `vercel.json`.
-3. Add the three `VITE_EMAILJS_*` environment variables in the Vercel project settings.
-4. Deploy. `vercel.json` already configures the SPA rewrite and long-cache headers for hashed assets.
+### GitHub Pages (current)
+
+Live at **https://aayush-arya.github.io/aayush-portfolio/**.
+
+`.github/workflows/deploy.yml` builds and publishes `dist/` to GitHub Pages automatically on every push to `main` (via `actions/upload-pages-artifact` + `actions/deploy-pages`). The build sets `GH_PAGES=true` so `vite.config.ts` serves the site under the `/aayush-portfolio/` base path; all public asset references go through the `withBase()` helper in `src/lib/utils.ts` so they resolve correctly under that subpath.
+
+One-time repo setup: **Settings → Pages → Source: GitHub Actions**.
+
+### Vercel (alternative)
+
+1. Import the project in [Vercel](https://vercel.com/new) — it auto-detects Vite via `vercel.json`.
+2. Add the three `VITE_EMAILJS_*` environment variables in the Vercel project settings.
+3. Deploy. `vercel.json` already configures the SPA rewrite and long-cache headers for hashed assets. (Vercel serves from the domain root, so no `base` override is needed there — it only applies when `GH_PAGES=true`.)
 
 Or via CLI:
 
