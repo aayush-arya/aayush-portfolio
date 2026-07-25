@@ -28,6 +28,7 @@ export function Navbar() {
         <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (
             <button
+              type="button"
               key={link.href}
               onClick={() => scrollTo(link.href)}
               data-cursor-hover
@@ -50,6 +51,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <button
+            type="button"
             onClick={() => window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true }))}
             data-cursor-hover
             className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-gray-400 transition-colors hover:text-white sm:flex"
@@ -60,6 +62,7 @@ export function Navbar() {
           </button>
 
           <button
+            type="button"
             onClick={() => setMobileOpen((o) => !o)}
             data-cursor-hover
             className="rounded-full border border-white/10 bg-white/5 p-2.5 text-white lg:hidden"
@@ -73,14 +76,16 @@ export function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.nav
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="glass mt-2 overflow-hidden rounded-2xl lg:hidden"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+            className="glass mt-2 rounded-2xl lg:hidden"
           >
             <div className="flex flex-col gap-1 p-3">
               {navLinks.map((link) => (
                 <button
+                  type="button"
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
                   className={cn(

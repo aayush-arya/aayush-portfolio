@@ -32,7 +32,7 @@ export function LoadingScreen({ onDone }: { onDone?: () => void }) {
     <AnimatePresence>
       {!done && (
         <motion.div
-          className="fixed inset-0 z-[1000] flex flex-col items-center justify-center bg-[#030712]"
+          className="pointer-events-none fixed inset-0 z-[1000] flex flex-col items-center justify-center bg-[#030712]"
           exit={{ opacity: 0, filter: 'blur(12px)' }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
