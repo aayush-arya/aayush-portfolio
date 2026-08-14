@@ -278,6 +278,7 @@ export const projects: Project[] = [
     tech: ['FastAPI', 'TypeScript', 'React', 'PostgreSQL', 'Redis', 'Claude API', 'Docker', 'GitHub Actions'],
     gradient: 'from-indigo-500 via-violet-500 to-purple-600',
     github: 'https://github.com/aayush-arya/interviewpilot-ai-interview-copilot',
+    demo: 'https://interviewpilot-ai-interview-copilot.vercel.app/',
     featured: true,
   },
   {
@@ -297,6 +298,7 @@ export const projects: Project[] = [
     tech: ['React', 'FastAPI', 'PostgreSQL', 'AWS SDK (boto3)', 'Scikit-learn', 'Docker'],
     gradient: 'from-cyan-500 via-blue-500 to-indigo-600',
     github: 'https://github.com/aayush-arya/aws-cost-optimization-platform',
+    demo: 'https://aws-cost-optimization-platform.vercel.app/',
     featured: true,
   },
   {
@@ -316,6 +318,7 @@ export const projects: Project[] = [
     tech: ['FastAPI', 'Python', 'React', 'Scikit-learn', 'SciPy', 'Docker', 'GitHub Actions'],
     gradient: 'from-blue-500 via-cyan-500 to-teal-600',
     github: 'https://github.com/aayush-arya/nextrec-ai',
+    demo: 'https://nextrec-ai.vercel.app/',
     featured: true,
   },
   {
@@ -335,6 +338,7 @@ export const projects: Project[] = [
     tech: ['React 19', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
     gradient: 'from-rose-500 via-pink-500 to-fuchsia-600',
     github: 'https://github.com/aayush-arya/lifeline-ai',
+    demo: 'https://lifeline-ai-nine.vercel.app/',
     featured: true,
   },
 ]
