@@ -219,6 +219,7 @@ export const projects: Project[] = [
     tech: ['NestJS', 'Next.js 15', 'React 19', 'TypeScript', 'Prisma', 'PostgreSQL', 'Redis', 'Tailwind CSS'],
     gradient: 'from-slate-600 via-indigo-600 to-violet-700',
     github: 'https://github.com/aayush-arya/sentinel-desk',
+    demo: 'https://sentinel-desk-frontend.vercel.app/',
     featured: true,
   },
   {
