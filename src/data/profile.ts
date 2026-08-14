@@ -258,6 +258,7 @@ export const projects: Project[] = [
     tech: ['Next.js 15', 'React 19', 'FastAPI', 'PostgreSQL', 'pgvector', 'InsightFace', 'Docker'],
     gradient: 'from-emerald-500 via-teal-500 to-cyan-600',
     github: 'https://github.com/aayush-arya/smart-attendance-ai',
+    demo: 'https://smart-attendance-ai-swart.vercel.app/',
     featured: true,
   },
   {
