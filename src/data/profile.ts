@@ -15,10 +15,10 @@ export const profile = {
   email: 'aayusharyaggm@gmail.com',
   phone: '+91-8287511292',
   summary:
-    "Computer Science undergraduate (B.Tech, AI and ML specialization) currently working as a Software Engineering Intern at Mycom, building production backend services in Spring Boot / Java for a reactive microservices platform. I combine hands-on backend development, cloud infrastructure (AWS), and strong CS fundamentals to deliver reliable, well-tested software.",
+    "Computer Science undergraduate (B.Tech, AI and ML specialization) who completed a Software Engineering Internship at Mycom, building production backend services in Spring Boot / Java for a reactive microservices platform. I combine hands-on backend development, cloud infrastructure (AWS), and strong CS fundamentals to deliver reliable, well-tested software.",
   longSummary: [
     "I'm a Computer Science (AI and ML specialization) undergraduate at Dronacharya College of Engineering who ended up loving backend systems as much as machine learning — the kind of engineering where a clean data pipeline and a well-placed cache matter just as much as a good model.",
-    "That shows up in my day job: at Mycom, I own the backend for PrOptima's Content Manager service — a Spring Boot 3 / WebFlux reactive microservice — where I've shipped a full feature end-to-end, from a 4-layer data pipeline down to SSRF protection, caching, and 20+ passing tests, without adding tech debt to the existing codebase.",
+    "That showed up in my internship at Mycom, where I owned the backend for PrOptima's Content Manager service — a Spring Boot 3 / WebFlux reactive microservice — shipping a full feature end-to-end, from a 4-layer data pipeline down to SSRF protection, caching, and 20+ passing tests, without adding tech debt to the existing codebase.",
     "Outside of work, I build things I'd actually want to use: InterviewPilot, an AI interview-prep SaaS powered by the Claude API with a real code-execution sandbox, and NextRec, a hybrid recommendation engine combining content, collaborative, and semantic signals. Before all that, an AWS Cloud Engineering internship at Maruti Suzuki taught me IAM and infrastructure the hard way — by doing it in production.",
   ],
   resumeUrl: withBase('/resume/Aayush_Arya_Resume.pdf'),
@@ -98,10 +98,10 @@ export const journey: TimelineItem[] = [
   },
   {
     id: 'mycom',
-    year: 'Jun 2026 — Present',
+    year: 'Jun 2026 — Aug 2026',
     title: 'Software Engineering Intern',
     place: 'Mycom',
-    description: "Owning backend delivery for PrOptima V6.0's Content Manager service — a reactive Spring Boot / WebFlux microservice — from design through production rollout.",
+    description: "Owned backend delivery for PrOptima V6.0's Content Manager service — a reactive Spring Boot / WebFlux microservice — from design through production rollout.",
     icon: 'briefcase',
   },
 ]
@@ -354,9 +354,9 @@ export const experience: ExperienceItem[] = [
     company: 'Mycom — PrOptima V6.0, Content Manager Service',
     period: 'Jun 2026 — Aug 2026',
     location: 'Onsite',
-    current: true,
+    current: false,
     points: [
-      "Own end-to-end backend implementation of the Embedded View feature for PrOptima's Content Manager service (eaa-proptima-web-reports) — a Spring Boot 3 / WebFlux (Java 21) reactive microservice enabling operators to embed external URLs, text, and images directly into product dashboards",
+      "Owned end-to-end backend implementation of the Embedded View feature for PrOptima's Content Manager service (eaa-proptima-web-reports) — a Spring Boot 3 / WebFlux (Java 21) reactive microservice enabling operators to embed external URLs, text, and images directly into product dashboards",
       'Designed and implemented a 4-layer data pipeline (DTO → App Model → Entity → PTO → MongoDB), introducing ReportType.EMBEDDED as a first-class view type across 5 new classes and 15+ modified files, mirroring the existing Gauge/Scorecard pattern with zero added tech debt',
       'Engineered production-grade validation and security controls — SSRF protection, image MIME/size restrictions, and single-mode validation rules — backed by a Caffeine cache (30-minute TTL) with mutation-based eviction',
       'Delivered 10+ JUnit/Mockito unit tests and 10 passing Cucumber BDD scenarios plus OpenAPI 3 documentation, resolving all code-review findings across 2 completed sprints and unblocking the downstream frontend integration team',
