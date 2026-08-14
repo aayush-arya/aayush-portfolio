@@ -345,6 +345,7 @@ export type ExperienceItem = {
   location: string
   current: boolean
   points: string[]
+  certificateUrl?: string
 }
 
 export const experience: ExperienceItem[] = [
@@ -355,6 +356,7 @@ export const experience: ExperienceItem[] = [
     period: 'Jun 2026 — Aug 2026',
     location: 'Onsite',
     current: false,
+    certificateUrl: withBase('/certificates/mycom-internship-certificate.png'),
     points: [
       "Owned end-to-end backend implementation of the Embedded View feature for PrOptima's Content Manager service (eaa-proptima-web-reports) — a Spring Boot 3 / WebFlux (Java 21) reactive microservice enabling operators to embed external URLs, text, and images directly into product dashboards",
       'Designed and implemented a 4-layer data pipeline (DTO → App Model → Entity → PTO → MongoDB), introducing ReportType.EMBEDDED as a first-class view type across 5 new classes and 15+ modified files, mirroring the existing Gauge/Scorecard pattern with zero added tech debt',
@@ -370,6 +372,7 @@ export const experience: ExperienceItem[] = [
     period: 'Jun 2025 — Jul 2025',
     location: 'Onsite, India',
     current: false,
+    certificateUrl: withBase('/certificates/maruti-suzuki-internship-certificate.jpeg'),
     points: [
       "Implemented IAM policies and access-control levels for users and groups, enforcing least-privilege security standards across the organization's AWS environment",
       'Automated infrastructure provisioning and management using AWS services including EC2, S3, EKS, and Lambda, streamlining deployment of cloud-based workloads',

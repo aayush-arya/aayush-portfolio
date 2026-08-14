@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Briefcase, MapPin } from 'lucide-react'
+import { Briefcase, MapPin, FileBadge } from 'lucide-react'
 import { experience } from '@/data/profile'
 import { SectionHeading } from '@/components/shared/SectionHeading'
 import { GlowCard } from '@/components/shared/GlowCard'
@@ -54,6 +54,19 @@ export function Experience() {
                     </li>
                   ))}
                 </ul>
+
+                {exp.certificateUrl && (
+                  <a
+                    href={exp.certificateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cursor-hover
+                    className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-gray-300 transition-colors hover:border-primary/40 hover:text-primary"
+                  >
+                    <FileBadge size={14} />
+                    View Certificate
+                  </a>
+                )}
               </GlowCard>
             </motion.div>
           ))}
