@@ -341,6 +341,26 @@ export const projects: Project[] = [
     demo: 'https://lifeline-ai-nine.vercel.app/',
     featured: true,
   },
+  {
+    id: 'blue-carbon-mrv',
+    title: 'Blue Carbon MRV Platform',
+    tagline: 'Blockchain-Verified Blue Carbon Registry & MRV System',
+    category: 'Climate Tech',
+    description:
+      'A blockchain-verified Blue Carbon Registry — Flutter field agents capture mangrove, seagrass, and salt-marsh evidence offline, a CLIP-based computer vision service scores ecosystem coverage, and a permissioned Hyperledger Fabric ledger turns validated evidence into tamper-evident, tokenized carbon credits.',
+    features: [
+      'Offline-first Flutter field app queues evidence locally via Hive and syncs automatically when connectivity returns',
+      'CLIP-based zero-shot computer vision (PyTorch + Transformers) classifies mangrove, seagrass, and salt-marsh coverage from field photos',
+      'Carbon calculation engine derives credits from coverage × area × configurable emission factors',
+      'Permissioned Hyperledger Fabric ledger with chaincode-enforced validate → record → tokenize state machine',
+      'Next.js dashboard with live mapping, a blockchain explorer, MRV record review, and duplicate-detection audit workflows',
+    ],
+    tech: ['Flutter', 'Node.js', 'TypeScript', 'PostgreSQL + PostGIS', 'FastAPI', 'PyTorch', 'Hyperledger Fabric', 'Next.js', 'Docker'],
+    gradient: 'from-lime-500 via-green-600 to-emerald-700',
+    github: 'https://github.com/aayush-arya/blockchain-carbon-based-mrv-system',
+    demo: 'https://blockchain-carbon-based-mrv-system.vercel.app',
+    featured: true,
+  },
 ]
 
 export type ExperienceItem = {
